@@ -81,7 +81,7 @@ body {
 .menu__item {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 12px 10px;
     background: #fff;
     border-radius: 10px;
@@ -89,14 +89,26 @@ body {
     cursor: pointer;
     fill: var(--purple-icon);
 }
-.menu__active {
+.section__active {
     background: var(--orange);
     fill: #fff;
+    color: #fff;
 }
 .menu__item:hover {
     transition: 0.2s ease-in-out;
     background: var(--orange);
     fill: #fff;
+    color: #fff;
+}
+.menu__active {
+    justify-content: flex-start;
+}
+.menu_section__name {
+    display: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 30px;
+    color: var(--purple-text);
 }
 
 /* User board */
@@ -346,18 +358,23 @@ main {
     color: var(--purple-icon);
     font-size: 24px;
     font-weight: 600;
+    text-decoration: none;
+}
+.product__title:hover {
+    text-decoration: underline;
 }
 .popular__content {
     margin-top: 25px;
     width: 100%;
-    height: 270px;
+    height: 250px;
     overflow: hidden;
+    position: relative;
 }
 .popular__list {
     list-style: none;
     display: flex;
     align-items: center;
-    overflow-x: scroll;
+    overflow-x: hidden;
 }
 .popular__list::-webkit-scrollbar {
     background: var(--main-bg);
@@ -428,6 +445,41 @@ main {
 }
 .popular__mark span {
     color: #FC8B40;
+}
+.move__game {
+    position: absolute;
+    z-index: 1;
+    background: rgb(155, 155, 155);
+    width: 100px;
+    opacity: 0.2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.move__game:hover {
+    transition: 0.3s ease-in-out;
+    opacity: 0.6;
+}
+.move__game svg {
+    fill: #fff;
+    width: 60px;
+    cursor: pointer;
+}
+.next__game {
+    top: 0;
+    right: 20px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.previos__game {
+    top: 0;
+    left: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.previos__game svg {
+    transform: scale(-1, 1)
 }
 
 /* Release */
