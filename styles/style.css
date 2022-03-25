@@ -366,7 +366,7 @@ main {
 .popular__content {
     margin-top: 25px;
     width: 100%;
-    height: 250px;
+    height: 260px;
     overflow: hidden;
     position: relative;
 }
@@ -374,7 +374,7 @@ main {
     list-style: none;
     display: flex;
     align-items: center;
-    overflow-x: hidden;
+    overflow-x: scroll;
 }
 .popular__list::-webkit-scrollbar {
     background: var(--main-bg);
@@ -446,41 +446,6 @@ main {
 .popular__mark span {
     color: #FC8B40;
 }
-.move__game {
-    position: absolute;
-    z-index: 1;
-    background: rgb(155, 155, 155);
-    width: 100px;
-    opacity: 0.2;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.move__game:hover {
-    transition: 0.3s ease-in-out;
-    opacity: 0.6;
-}
-.move__game svg {
-    fill: #fff;
-    width: 60px;
-    cursor: pointer;
-}
-.next__game {
-    top: 0;
-    right: 20px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-.previos__game {
-    top: 0;
-    left: 0;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-}
-.previos__game svg {
-    transform: scale(-1, 1)
-}
 
 /* Release */
 .released__list {
@@ -550,4 +515,37 @@ main {
     color: #FC8B40;
     font-size: 13px;
     margin: 0 5px;
+}
+
+@media screen and (max-width: 1575px) {
+    .main__inner {
+        width: 900px;
+    }
+}
+
+@media screen and (max-width: 1380px) {
+    .lg__item__info {
+        display: none;
+    }
+    .add__game {
+        display: none;
+    }
+    .user__notification {
+        display: none;
+    }
+    .user_board {
+        flex-basis: 50px;
+    }
+    .lg__title {
+        font-size: 20px;
+    }
+    .user__accaunt {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    .main__inner {
+        width: 800px;
+    }
 }
