@@ -1,4 +1,4 @@
-#Gaming Dashboard Layout
+# Gaming Dashboard Layout
 
 ![](preview.png)
 
