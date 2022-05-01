@@ -184,7 +184,7 @@ body {
     background: #FAFAFA;
     transition: 0.2s ease-in;
 }
-.lg__item__img {
+.lg__item_img {
     width: 70px;
     height: 70px;
     overflow: hidden;
@@ -193,7 +193,7 @@ body {
     justify-content: center;
     border-radius: 10px;
 }
-.lg__item__img img {
+.lg__item_img img {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -411,12 +411,12 @@ main {
     font-size: 20px;
     font-weight: 500;
 }
-.popular__item:last-child .more_game__icon {
+.popular__item:last-child .more_game_icon {
     fill: #fff;
     width: 20px;
     height: 20px;
 }
-.popular__item__container {
+.popular__item_container {
     position: relative;
     height: 100%;
 }
