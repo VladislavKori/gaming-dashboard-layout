@@ -16,10 +16,12 @@
     font-family: 'Rubik', sans-serif;
 }
 
+body, html {
+    height: 100%;
+}
+
 body {
     background: #fff;
-    height: 100vh;
-    overflow-y: hidden;
 }
 
 *::-webkit-scrollbar {
